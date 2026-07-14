@@ -85,14 +85,22 @@
 
   &__wrapper {
     display: flex;
-    transition: transform 0.3s ease-in-out;
     margin: 0 -8.5px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 
   &__slide {
     flex-shrink: 0;
     width: 100%;
     padding: 0 8.5px;
+    scroll-snap-align: start;
 
     @media (min-width: $breakpoint-tablet) {
       width: 50%;

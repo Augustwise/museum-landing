@@ -62,50 +62,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  const sliderWrapper = document.querySelector('.gallery-slider__wrapper');
-  const slides = document.querySelectorAll('.gallery-slider__slide');
-  const dotsContainer = document.querySelector('.gallery-slider__dots');
-
-  if (sliderWrapper && slides.length > 0) {
-    let currentIndex = 0;
-    const totalSlides = slides.length;
-
-    const updateDots = () => {
-      dots.forEach((dot, index) => {
-        dot.classList.toggle('active', index === currentIndex);
-      });
-    };
-
-    const goToSlide = (index) => {
-      const slideWidth = slides[0].clientWidth;
-
-      sliderWrapper.style.transform = `translateX(-${index * slideWidth}px)`;
-      currentIndex = index;
-      updateDots();
-    };
-
-    for (let i = 0; i < totalSlides; i++) {
-      const dot = document.createElement('div');
-
-      dot.classList.add('gallery-slider__dot');
-
-      if (i === 0) {
-        dot.classList.add('active');
-      }
-
-      dot.addEventListener('click', () => {
-        goToSlide(i);
-      });
-      dotsContainer.appendChild(dot);
-    }
-
-    const dots = document.querySelectorAll('.gallery-slider__dot');
-
-    window.addEventListener('resize', () => {
-      goToSlide(currentIndex);
-    });
-  }
-
   const scrollToTopButton = document.getElementById('scrollToTop');
 
   if (scrollToTopButton) {

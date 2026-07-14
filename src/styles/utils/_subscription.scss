@@ -61,10 +61,10 @@
 
 .subscription-form {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
 
   @media (min-width: $breakpoint-tablet) {
-    flex-direction: row;
-    justify-content: center;
     gap: 16px;
   }
 }
