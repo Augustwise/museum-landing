@@ -14,6 +14,10 @@ The layout follows the original design: **[Figma design](https://www.figma.com/f
 
 ### Core
 
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![Sass](https://img.shields.io/badge/SCSS-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
 - **HTML5** — semantic markup, `lang="uk"`, meaningful `alt` text on every image
 - **SCSS** (Sass) — variables, mixins, `@extend`, nesting, partials per section
 - **JavaScript (ES6+)** — vanilla, no dependencies
@@ -25,6 +29,14 @@ The layout follows the original design: **[Figma design](https://www.figma.com/f
 - **Design tokens** — colors, breakpoints, column widths and gutters live in `_vars.scss`
 
 ### Tooling
+
+![Parcel](https://img.shields.io/badge/Parcel-E9BC3D?style=for-the-badge&logo=parcel&logoColor=black)
+![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=eslint&logoColor=white)
+![Stylelint](https://img.shields.io/badge/Stylelint-263238?style=for-the-badge&logo=stylelint&logoColor=white)
+![Prettier](https://img.shields.io/badge/Prettier-F7B93E?style=for-the-badge&logo=prettier&logoColor=black)
+![Cypress](https://img.shields.io/badge/Cypress-17202C?style=for-the-badge&logo=cypress&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
+![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-222222?style=for-the-badge&logo=githubpages&logoColor=white)
 
 - **Parcel** (v2.12) — zero-config bundler and dev server
 - **ESLint** (`@mate-academy/eslint-config`) — JavaScript code quality
