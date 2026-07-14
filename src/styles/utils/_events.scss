@@ -22,6 +22,12 @@
   margin-bottom: 12px;
   text-transform: uppercase;
   text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    transform: rotate(180deg) scale(1.05);
+    color: $c-green;
+  }
 
   @media (min-width: $breakpoint-tablet) {
     font-size: 22px;
