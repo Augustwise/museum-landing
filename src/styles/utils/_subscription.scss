@@ -83,6 +83,17 @@
     font-weight: 400;
   }
 
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus,
+  &:-webkit-autofill:active {
+    -webkit-text-fill-color: $c-black;
+    -webkit-box-shadow: 0 0 0 1000px #fff inset;
+    box-shadow: 0 0 0 1000px #fff inset;
+    caret-color: $c-black;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+
   @media (min-width: $breakpoint-tablet) {
     flex-grow: 1;
   }
